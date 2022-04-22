@@ -6,8 +6,7 @@ PUT http://localhost:7500/api/account/profile HTTP/1.1
 content-type: application/json
 
 {
-    "name": "sample",
-    "boho":"asd"
+    "name": "sample"
 }
 
 ###
