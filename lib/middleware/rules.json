@@ -10,9 +10,7 @@
     "/api/account/role": {
       "get": {
         "summary": "Get Team Account Roles",
-        "tags": [
-          "Company"
-        ],
+        "tags": ["Company"],
         "description": "Get array of valid roles for team account",
         "produces": "application/json",
         "responses": {
@@ -55,9 +53,7 @@
     "/api/account/profile": {
       "put": {
         "summary": "Update Team Account",
-        "tags": [
-          "Company"
-        ],
+        "tags": ["Company"],
         "description": "Update team account details of the currently logged in user",
         "produces": "application/json",
         "consumes": "application/json",
@@ -93,9 +89,7 @@
     "/api/account/member": {
       "delete": {
         "summary": "Delete a Team Member",
-        "tags": [
-          "Company"
-        ],
+        "tags": ["Company"],
         "description": "Delete team member",
         "produces": "application/json",
         "consumes": "application/json",
@@ -104,9 +98,7 @@
             "in": "body",
             "schema": {
               "type": "object",
-              "required": [
-                "account_id"
-              ],
+              "required": ["account_id"],
               "properties": {
                 "account_id": {
                   "type": "integer"
@@ -128,9 +120,7 @@
     "/api/account/search": {
       "get": {
         "summary": "Search Candidates",
-        "tags": [
-          "Company"
-        ],
+        "tags": ["Company"],
         "description": "List candidates",
         "consumes": "application/json",
         "produces": "application/json",
@@ -289,11 +279,7 @@
                   "items": {
                     "type": "integer"
                   },
-                  "example": [
-                    123,
-                    34,
-                    44
-                  ]
+                  "example": [123, 34, 44]
                 },
                 "values": {
                   "type": "object"

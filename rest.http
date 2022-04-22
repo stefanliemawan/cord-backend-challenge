@@ -10,6 +10,15 @@ content-type: application/json
 }
 
 ###
+PUT http://localhost:7500/api/account/profile HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "boho": "asd"
+}
+
+###
 DELETE http://localhost:7500/api/account/member HTTP/1.1
 content-type: application/json
 
@@ -18,5 +27,21 @@ content-type: application/json
 }
 
 ###
+DELETE http://localhost:7500/api/account/member HTTP/1.1
+content-type: application/json
+
+{
+    "account_id": "asd"
+}
+
+###
 GET http://localhost:7500/api/account/search/?sort_by=quality&page=1 HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:7500/api/account/search/?sort_by=quality&page=asd HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:7500/api/account/search/?job_type=asd,asd HTTP/1.1
 content-type: application/json
