@@ -1,0 +1,24 @@
+GET http://localhost:7500/api/account/role HTTP/1.1
+content-type: application/json
+
+###
+PUT http://localhost:7500/api/account/profile HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "job_title": "test",
+    "photo_url": "www.google.com"
+}
+
+###
+DELETE http://localhost:7500/api/account/member HTTP/1.1
+content-type: application/json
+
+{
+    "account_id": 1
+}
+
+###
+GET http://localhost:7500/api/account/search/?sort_by=quality&page=1 HTTP/1.1
+content-type: application/json
